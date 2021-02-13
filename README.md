@@ -25,5 +25,6 @@ $ vimm
 
 You are now running container's vim.
 
-NB: You host's current dir was mounted on container's `/media/host` folder.
-NB: container `workdir` is now set to it.
+NB:
+- You host's current dir was mounted on container's `/media/host` folder.
+- container `workdir` is now set to it.
