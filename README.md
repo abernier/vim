@@ -20,7 +20,7 @@ vimm() {
 then:
 
 ```sh
-$ vimm
+$ vimm .
 ```
 
 You are now running container's vim.
@@ -28,7 +28,7 @@ You are now running container's vim.
 NB:
 - You host's current dir was mounted on container's `/media/host` folder.
 - container's working dir is now set to it.
-- `$*` forwards all `vimm` command params to ENTRYPOINT `vim`
+- Any `vimm` command parameters will be forwarded to image ENTRYPOINT `vim`, thanks to `$*`
 
 # Release
 
