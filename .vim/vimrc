@@ -1,4 +1,21 @@
+" syntax highlighting
+syntax on
+
+" lines numbers
 set number
 set relativenumber
+"set numberwidth=5
 
-syntax on
+"
+" Plugins
+" ===
+"
+
+" vim-code-dark
+colorscheme codedark
+
+"
+" Statusline
+"
+
+set noshowmode " disable showing mode since we use lightline plugin

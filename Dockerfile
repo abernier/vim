@@ -1,12 +1,8 @@
+# syntax = docker/dockerfile:1.3-labs
 FROM alpine
 
-RUN apk add --no-cache \
-  git \
-  vim
+RUN apk add --no-cache vim
 
-WORKDIR /root/.vim
- 
-COPY .vim/vimrc ./
-RUN (cd ~ && ln -s .vim/vimrc .vimrc)
+COPY .vim /root/.vim
 
 ENTRYPOINT ["vim"]

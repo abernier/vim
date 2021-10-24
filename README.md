@@ -33,6 +33,21 @@ NB:
 # Release
 
 ```sh
+$ git submodule init
 $ docker build -t abernier/vim .
 $ docker push abernier/vim
+```
+
+## Updating plugins
+
+```sh
+git submodule update --remote --merge
+git commit
+```
+
+## Removing a plugin
+
+```sh
+git submodule deinit .vim/pack/plugins/start/lightline
+git commit
 ```
